@@ -6,7 +6,7 @@
 
 Its main goal is to make life miserable for potential attackers, ensuring both the confidentiality and authenticity of encrypted data.
 
----
+
 
 ## Key Features
 
@@ -16,14 +16,14 @@ Its main goal is to make life miserable for potential attackers, ensuring both t
 - **Modular Task Separation**: Clean and maintainable code with dedicated methods for key derivation, validation, data combination, and extraction.
 - **Custom Exception Handling**: Differentiates between authentication errors and general operation errors for easier debugging.
 
----
+
 
 ## Prerequisites
 
 - Java 8 or higher
 - Android API Level 23 or higher (for full AES/GCM support)
 
----
+
 
 ## Class Initialization
 
@@ -33,7 +33,7 @@ Its main goal is to make life miserable for potential attackers, ensuring both t
 import com.security.cipher.zty.ZTySecurityCipher;
 ```
 
----
+
 
 ## Basic Usage
 
@@ -60,7 +60,7 @@ try {
 4. **AES/GCM Encryption**: Protects both the confidentiality and integrity of the data.
 5. **Final Output**: Returns Base64-encoded ciphertext for easy storage or transmission.
 
----
+
 
 ### 2. Data Decryption
 
@@ -81,7 +81,7 @@ try {
 4. **AAD Authentication**: Verifies data integrity using the UUID.
 5. **Decryption**: If authentication fails (due to tampering or incorrect UUID), an `AuthenticationException` is thrown.
 
----
+
 
 ## Custom Exceptions
 
@@ -89,7 +89,7 @@ try {
 - **SecurityOperationException**: General errors during encryption or decryption operations.
 - **AuthenticationException**: Authentication failure, indicating possible data tampering or incorrect credentials.
 
----
+
 
 ## Security Recommendations
 
@@ -98,7 +98,7 @@ try {
 - Use Android Keystore if possible for more secure key management.
 - Don’t rely solely on encryption—ensure additional security measures in your app.
 
----
+
 
 ## Complete Example
 
@@ -124,7 +124,7 @@ public class SecurityExample {
 }
 ```
 
----
+
 
 ## Conclusion
 
